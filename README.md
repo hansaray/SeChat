@@ -20,3 +20,7 @@ Codes are automaticaly created by the app with sign up.
 
 # Photos
 
+<img width="322" alt="Screenshot 2021-03-25 at 17 45 51" src="https://user-images.githubusercontent.com/70692539/112511261-8d484f00-8d92-11eb-9366-5946c145fed3.png">
+<img width="324" alt="Screenshot 2021-03-25 at 17 46 39" src="https://user-images.githubusercontent.com/70692539/112511274-8faaa900-8d92-11eb-8ac5-ef9e9b639c27.png">
+<img width="325" alt="Screenshot 2021-03-25 at 17 47 28" src="https://user-images.githubusercontent.com/70692539/112511280-90dbd600-8d92-11eb-8c50-e589f10a22ee.png">
+<img width="322" alt="Screenshot 2021-03-25 at 17 48 41" src="https://user-images.githubusercontent.com/70692539/112511291-92a59980-8d92-11eb-9db8-3e194746f5a8.png">
