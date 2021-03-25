@@ -1,0 +1,45 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="splashScreenStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/layout_splash</item>
+        <item name="colorPrimary">@color/mainBlue</item>
+        <item name="colorPrimaryDark">@color/mainBlue</item>
+        <item name="colorAccent">@color/mainBlue</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="textColor">#000000</item>
+        <item name="backgroundColor">#ffffff</item>
+        <item name="background2Color">#F7F7FF</item>
+        <item name="mainBlueColor">#008ECC</item>
+        <item name="selectedColor">#004968</item>
+        <item name="redColor">#A60000</item>
+        <item name="textColor2">#778899</item>
+        <item name="greenColor">#228B22</item>
+        <item name="colorPrimaryDark">#008ECC</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="textColor">#ffffff</item>
+        <item name="backgroundColor">#121212</item>
+        <item name="background2Color">#42425C</item>
+        <item name="mainBlueColor">#56A9CD</item>
+        <item name="selectedColor">#00E6FB</item>
+        <item name="redColor">#EDCD3636</item>
+        <item name="textColor2">#BCBCBC</item>
+        <item name="greenColor">#32CD32</item>
+        <item name="colorPrimaryDark">#42425C</item>
+    </style>
+
+
+</resources>

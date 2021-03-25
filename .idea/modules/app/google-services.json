@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "367596646645",
+    "project_id": "sechat-94dc7",
+    "storage_bucket": "sechat-94dc7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:367596646645:android:47bd8e38032bbc30bed5bc",
+        "android_client_info": {
+          "package_name": "com.simpla.sechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "367596646645-g3s4pk8a0ee223tvm3msbbfvv73n88il.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.simpla.sechat",
+            "certificate_hash": "68925e66b07be966dfe77f88b3024fa3a4f30390"
+          }
+        },
+        {
+          "client_id": "367596646645-4ffvtbuoaqqaub8i11dga7rmbhga45qh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBg7AiV-XWkQZpzcO1ZzXDierPSwsaaUd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "367596646645-4ffvtbuoaqqaub8i11dga7rmbhga45qh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

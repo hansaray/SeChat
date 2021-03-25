@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:map="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+tools:context=".LocationActivity">
+
+<androidx.fragment.app.FragmentContainerView
+    android:id="@+id/location_map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="0dp"
+    android:layout_height="300dp"
+    android:layout_marginTop="1dp"
+    map:layout_constraintEnd_toEndOf="parent"
+    map:layout_constraintStart_toStartOf="parent"
+    map:layout_constraintTop_toBottomOf="@+id/location_toolbar" >
+
+</androidx.fragment.app.FragmentContainerView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/location_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_design_2"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/location_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="@string/send_location"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.5"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/location_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            map:layout_constraintBottom_toBottomOf="parent"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent"
+            map:srcCompat="@drawable/ic_back"
+            tools:ignore="ContentDescription" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/location_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:visibility="visible"
+    map:layout_constraintBottom_toBottomOf="parent"
+    map:layout_constraintEnd_toEndOf="parent"
+    map:layout_constraintStart_toStartOf="parent"
+    map:layout_constraintTop_toBottomOf="@+id/location_map">
+
+    <TextView
+        android:id="@+id/location_title"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/near_by"
+        android:textColor="?attr/textColor"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/location_line2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="?attr/mainBlueColor"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/location_title" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/location_rw"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/location_line2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/location_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.5"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/location_map">
+
+        <TextView
+            android:id="@+id/location_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/your_location"
+            android:textStyle="bold"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.5"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/location_your_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/mainBlue"
+            android:textSize="16sp"
+            map:layout_constraintEnd_toEndOf="parent"
+            map:layout_constraintHorizontal_bias="0.5"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/location_title2" />
+
+        <CheckBox
+            android:id="@+id/location_no_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/clear_location"
+            map:layout_constraintStart_toStartOf="parent"
+            map:layout_constraintTop_toBottomOf="@+id/location_your_location" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dm_name"
+        android:icon="@drawable/ic_name"
+        android:title="@string/change_name" />
+    <item
+        android:id="@+id/dm_code"
+        android:icon="@drawable/ic_code"
+        android:title="@string/show_code" />
+
+    <item
+        android:id="@+id/dm_dark"
+        android:icon="@drawable/ic_dark_mode"
+        android:title="@string/dark_mode"
+        app:actionLayout="@layout/switch_item" />
+
+    <item
+        android:id="@+id/dm_logout"
+        android:icon="@drawable/ic_log_out"
+        android:title="@string/logout" />
+</menu>
